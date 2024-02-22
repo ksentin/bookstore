@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Italiana-Regular';
+    src: url('fonts/Italiana-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('images/background.png');
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    border-bottom: 2px solid #000;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header div {
+    margin: 10px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header .with-border{
+    border-right: 1px solid #000;
+}
+
+header p {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header p:hover {
+    transform: translateY(-5px);
+}
+
+header .search-field {
+    display: flex;
+    flex-grow: 1;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header .icon.expanded {
+    width: 100%; 
+    border: 1px solid #000;
+}
+
+header .search-field input {
+    width: 100%;
+    box-sizing: border-box; 
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+#search-input {
+    color: black; 
+}
+
+label {
+    margin-right: 5px;
+}
+
+header .search-field.expanded input {
+    border: 1px solid #000; 
+}
+
+header img {
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .icon {
+    width: fit-content;
+    margin: 0%;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin-left: auto;
+}
+
+header img:hover {
+    transform: translateY(-5px);
+}
+
+header .buttontext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header .button:hover {
+    transform: translateY(-5px);
+}
