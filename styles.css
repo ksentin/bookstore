@@ -152,11 +152,11 @@ footer {
 .footer-column p {
     margin: 5px 0;
     text-align: center;
-    color: black; /* змінити колір тексту на чорний */
+    color: black;
 }
 
 .footer-column a {
-    text-decoration: none; /* видалити риску посилання */
+    text-decoration: none;
 }
 
 .footer-center {
@@ -166,4 +166,57 @@ footer {
     text-align: center;
     color: black;
     margin-top: 25px; 
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 480px;
+}
+
+.books img{
+    height: 500px;
+}
+
+.books img:hover {
+    transform: translateY(-5px);
+}
+
+.main-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-text{
+    width: 70%;
+}
+
+.main-text p{
+    font-family: 'KyivTypeSerif-Regular';
+    width: 700px;
+}
+
+.letters{
+    display: flex;
+    flex-direction: column;
+}
+
+.bestchoice{
+    font-family: 'KyivTypeSerif-Medium';
+    color: #CC6E00;
+    font-size: 21px;
+}
+
+.highlight {
+    color: #CC6E00;
 }
