@@ -5,14 +5,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'KyivTypeSerif-Medium';
+    src: url('fonts/KyivTypeSerif-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivTypeSerif-Regular';
+    src: url('fonts/KyivTypeSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: url('images/background.png');
+    height: 100%;
+    width: 100%;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    height: 80px;
+    height: 60px;
     border-bottom: 2px solid #000;
     margin-left: 40px;
     margin-right: 40px;
@@ -118,4 +134,36 @@ header .buttontext {
 
 header .button:hover {
     transform: translateY(-5px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    text-align: center;
+    color: black; /* змінити колір тексту на чорний */
+}
+
+.footer-column a {
+    text-decoration: none; /* видалити риску посилання */
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    text-align: center;
+    color: black;
+    margin-top: 25px; 
 }
